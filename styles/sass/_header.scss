@@ -1,0 +1,9 @@
+.header-nav ul {
+    @include horizontal-list;
+    li {
+        padding: 10px;
+        a {
+            text-decoration: none;
+        }
+    }
+}
