@@ -1,9 +1,21 @@
+html, body, p, h1, h2, h3, h4, h5, nav, ul, li, a, section, div, main, footer, button {
+    @include reset;
+}
+
 html {
-    font-size: $htmlDefault;
+    font-size: $html-default;
     // font-family: source-code-pro, monospace;
     font-weight: 400;
   }
 
-  body {
-      font-size: $minFontSize;
+body {
+      font-size: $min-font-size;
   }
+
+.mobile-wrapper {
+
+}
+
+.desktop-wrapper {
+    
+}
