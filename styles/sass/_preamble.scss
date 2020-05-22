@@ -1,21 +1,23 @@
-html, body, p, h1, h2, h3, h4, h5, nav, ul, li, a, section, div, main, footer, button {
+html, body, p, h1, h2, h3, h4, h5, h6, nav, ul, li, a, section, div, main, aside, span, footer, button, form, input {
     @include reset;
 }
 
 html {
     font-size: $html-default;
-    // font-family: source-code-pro, monospace;
+    font-family: $main-font;
     font-weight: 400;
   }
 
 body {
-      font-size: $min-font-size;
+    font-size: $min-font-size;
   }
 
-.mobile-wrapper {
-
+h1, h2, h3, h4, h5, h6 {
+    // font-family: $secondary-font;
 }
 
-.desktop-wrapper {
-    
+.mobile-wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
