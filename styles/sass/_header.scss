@@ -4,11 +4,11 @@ header {
     background-size: cover;
     background-position: right;
     height: 755px;
+}
 
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-
+.logo {
+    color: #FFC600;
+    // font-size: 4.15rem;
 }
 
 .header-nav ul {
@@ -16,8 +16,8 @@ header {
     li {
         padding: 10px;
         a {
-            text-decoration: none;
             color: #fff;
+            text-decoration: none;
         }
     }
 }
