@@ -9,7 +9,7 @@
 $viewport-increment: 1px; // customize to suite
 
 // Desktop
-$desktop: 1200px; // customize to suite
+$desktop: 1600px; // customize to suite
 $pre-desktop: $desktop - $viewport-increment;
 
 // Tablet
@@ -53,26 +53,43 @@ $max: max-width;
 
 }
 
+// ==================================================
+// $Project Two Queries
+// ==================================================
+
+@media ($min: $palm) {
+  .palm-wrapper {
+  width: calc(100% - 40px);
+  max-width: 1600px;
+  margin: 0 auto;
+  }
+
+}
 
 // ==================================================
 // The Implementation!
 // ==================================================
 
-p, h2 {
+
   @include mediaQuery($max, $palm) {
-    font-size: 75%;
+    h2 {
+    font-size: $logo * 0.75;
+    }
   }
 
   @include mediaQuery(null, $post-palm, $pre-tablet) {
-    font-size: 87.5%;
+    h2 {
+    font-size: $logo * 0.875;
+    }
   }
  
   @include mediaQuery($min, $tablet) {
-    font-size: 100%;
+    h2 {
+    font-size: $logo;
+    }
   }
   
   @include mediaQuery($min, $desktop) {
-    font-size: 120.75%;
-    line-height: 1.2;
+    
+
   }
-}
