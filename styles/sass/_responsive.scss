@@ -9,7 +9,7 @@
 $viewport-increment: 1px; // customize to suite
 
 // Desktop
-$desktop: 1600px; // customize to suite
+$desktop: 1200px; // customize to suite
 $pre-desktop: $desktop - $viewport-increment;
 
 // Tablet
@@ -57,12 +57,7 @@ $max: max-width;
 // $Project Two Queries
 // ==================================================
 
-@media ($min: $palm) {
-  .palm-wrapper {
-  width: calc(100% - 40px);
-  max-width: 1600px;
-  margin: 0 auto;
-  }
+@media ($min: $palm) { // min 640px
 
 }
 
@@ -71,36 +66,69 @@ $max: max-width;
 // ==================================================
 
 
-  @include mediaQuery($max, $palm) {
+  @include mediaQuery($max, $palm) { // max 640px
     
   }
 
-  @include mediaQuery(null, $post-palm, $pre-tablet) {
+  @include mediaQuery(null, $post-palm, $pre-tablet) {  // 641px - 767px
     body {
       font-size: font-size(body) * 0.875;
-  }
+    }
 
     .logo {
       font-size: font-size(logo) * 0.875;
     }
-
+    
     
   }
  
-  @include mediaQuery($min, $tablet) {
+  @include mediaQuery($min, $tablet) { // min 768px
+    .wrapper {
+      width: calc(100% - 40px);
+      max-width: 1600px;
+      margin: 0 auto;
+    }
     body {
       font-size: font-size(body);
-  }
+    }
+
+    .nav-wrapper {
+      width: 90%;
+    }
 
     .logo {
       font-size: font-size(logo);
     }
-
-    .header-nav ul {
-      display: flex;
+    .header-nav {
+      width: 50%;
+      max-width: 450px;
     }
+    .header-nav ul {
+      flex-direction: unset;
+      background-color: unset;
+      position: unset;
+      width: unset;
+      height: unset;
+      justify-content: space-between;
+      li {
+        padding: unset;
+        width: unset;
+        text-align: unset;
+        a {
+          display: unset;
+          height: unset;
+          &:hover {
+            color: color(marigold);
+          }
+        }
+      }
+    }
+
   }
   
-  @include mediaQuery($min, $desktop) {
+  @include mediaQuery($min, $desktop) { // min 1200px
+    .nav-wrapper {
+      width: calc(100% - 250px);
+    }
     
   }

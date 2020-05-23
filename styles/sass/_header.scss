@@ -6,18 +6,59 @@ header {
     height: 755px;
 }
 
+.nav-wrapper {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
 .logo {
-    @include color(marigold);
-    font-size: map-get($font-sizes, logo) * 0.75;
+    color: color(marigold);
+    font-size: font-size(logo) * 0.75;
+}
+
+.menu-button {
+    background: transparent;
+    border: none;
+    position: relative;
+    z-index: 1;
+    .hamburger {
+        color: color(ice-blue);
+    }
 }
 
 .header-nav ul {
-    @include horizontal-list;
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: color(marigold);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
     li {
-        padding: 10px;
+        padding: 5px 0;
+        width: 100%;
+        text-align: center;
         a {
-            @include color(white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            color: color(ice-blue);
             text-decoration: none;
+            text-transform: uppercase;
+            font-weight: font-weight(bold);
         }
     }
 }
