@@ -77,25 +77,30 @@ $max: max-width;
 
   @include mediaQuery(null, $post-palm, $pre-tablet) {
     body {
-      font-size: map-get($font-sizes, body) * 0.875;
+      font-size: font-size(body) * 0.875;
   }
 
     .logo {
-      font-size: map-get($font-sizes, logo) * 0.875;
+      font-size: font-size(logo) * 0.875;
     }
+
+    
   }
  
   @include mediaQuery($min, $tablet) {
     body {
-      font-size: map-get($font-sizes, body);
+      font-size: font-size(body);
   }
 
     .logo {
-      font-size: map-get($font-sizes, logo);
+      font-size: font-size(logo);
+    }
+
+    .header-nav ul {
+      display: flex;
     }
   }
   
   @include mediaQuery($min, $desktop) {
     
-
   }

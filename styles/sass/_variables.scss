@@ -10,7 +10,6 @@ $colors: (
 @mixin color($color-name) {
     color: map-get($colors, $color-name);
 };
-
 @function color($color-name) {
     $choice: map-get($colors, $color-name);
     @return $choice;
@@ -31,6 +30,12 @@ $font-sizes: (
 @mixin font-size($type) {
     font-size: map-get($font-sizes, $type);
 };
+@function font-size($type) {
+    $choice: map-get($font-sizes, $type);
+    @return $choice;
+}
+
+
 
 // Font Family
 $font-families: (
@@ -40,6 +45,10 @@ $font-families: (
 @mixin font-family($type) {
     font-family: map-get($font-families, $type);
 };
+@function font-family($type) {
+    $choice: map-get($font-families, $type);
+    @return $choice;
+}
 
 // Font Weights
 $font-weights: (
@@ -50,3 +59,7 @@ $font-weights: (
 @mixin font-weight($weight) {
     font-weight: map-get($font-weights, $weight);
 };
+@function font-weight($type) {
+    $choice: map-get($font-weights, $type);
+    @return $choice;
+}
