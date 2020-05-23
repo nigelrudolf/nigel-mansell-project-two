@@ -11,6 +11,11 @@ $colors: (
     color: map-get($colors, $color-name);
 };
 
+@function color($color-name) {
+    $choice: map-get($colors, $color-name);
+    @return $choice;
+}
+
 // Font Sizes
 $font-sizes: (
     html-default: 62.5%,
