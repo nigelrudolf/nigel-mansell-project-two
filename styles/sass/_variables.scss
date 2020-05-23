@@ -1,24 +1,47 @@
-// Color palette
-$ice-blue: #FAFFFE;
-$charcoal: #262725;
-$marigold: #FFC600;
-$mud-green: #555F02;
-$camo-green: #1E140E;
+// Colors
+$colors: (
+    ice-blue: #FAFFFE,
+    charcoal: #262725,
+    marigold: #FFC600,
+    mud-green: #555F02,
+    camo-green: #1E140E,
+    white: #FFF
+);
+@mixin color($color-name) {
+    color: map-get($colors, $color-name);
+};
 
+// Font Sizes
+$font-sizes: (
+    html-default: 62.5%,
+    mindnsoul: 11.5rem,
+    blog: 10.5rem,
+    group: 4.5rem,
+    logo: 4.15rem,
+    customized: 4rem,
+    navigation: 2rem,
+    body: 2rem,
+    form-placeholder: 2rem,
+);
+@mixin font-size($type) {
+    font-size: map-get($font-sizes, $type);
+};
 
-// Text Style
-$h1-font-size: 11.5rem;
-$main-font: 'Dokdo', cursive;
-$secondary-font: 'Lato', sans-serif;
+// Font Family
+$font-families: (
+    primary: ('Lato', sans-serif),
+    secondary: ('Dokdo', cursive)
+);
+@mixin font-family($type) {
+    font-family: map-get($font-families, $type);
+};
 
-$fw-light: 300;
-$fw-regular: 400;
-$fw-bold: 700;
-
-// General
-$html-default: 62.5%;
-$min-font-size: 1.6rem;
-$max-font-size: 2rem;
-
-
-
+// Font Weights
+$font-weights: (
+    light: 300,
+    regular: 400,
+    bold: 700
+);
+@mixin font-weight($weight) {
+    font-weight: map-get($font-weights, $weight);
+};

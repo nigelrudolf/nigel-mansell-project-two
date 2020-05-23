@@ -3,21 +3,22 @@ html, body, p, h1, h2, h3, h4, h5, h6, nav, ul, li, a, section, div, main, aside
 }
 
 html {
-    font-size: $html-default;
-    font-family: $main-font;
-    font-weight: 400;
-  }
-
-body {
-    font-size: $min-font-size;
+    @include font-family(primary);
+    @include font-size(html-default);
+    @include font-weight(regular);
   }
 
 h1, h2, h3, h4, h5, h6 {
-    // font-family: $secondary-font;
+    @include font-family(secondary);
+    @include font-weight(regular);
+}
+
+body {
+    font-size: map-get($font-sizes, body) * 0.75;
 }
 
 .mobile-wrapper {
     width: 100%;
-    max-width: 1600px;
+    // max-width: 1600px;
     margin: 0 auto;
 }

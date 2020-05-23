@@ -72,20 +72,26 @@ $max: max-width;
 
 
   @include mediaQuery($max, $palm) {
-    h2 {
-    font-size: $logo * 0.75;
-    }
+    
   }
 
   @include mediaQuery(null, $post-palm, $pre-tablet) {
-    h2 {
-    font-size: $logo * 0.875;
+    body {
+      font-size: map-get($font-sizes, body) * 0.875;
+  }
+
+    .logo {
+      font-size: map-get($font-sizes, logo) * 0.875;
     }
   }
  
   @include mediaQuery($min, $tablet) {
-    h2 {
-    font-size: $logo;
+    body {
+      font-size: map-get($font-sizes, body);
+  }
+
+    .logo {
+      font-size: map-get($font-sizes, logo);
     }
   }
   

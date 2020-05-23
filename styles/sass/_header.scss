@@ -7,8 +7,8 @@ header {
 }
 
 .logo {
-    color: #FFC600;
-    // font-size: 4.15rem;
+    @include color(marigold);
+    font-size: map-get($font-sizes, logo) * 0.75;
 }
 
 .header-nav ul {
@@ -16,7 +16,7 @@ header {
     li {
         padding: 10px;
         a {
-            color: #fff;
+            @include color(white);
             text-decoration: none;
         }
     }
