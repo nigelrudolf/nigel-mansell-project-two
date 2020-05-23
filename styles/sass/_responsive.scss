@@ -58,7 +58,9 @@ $max: max-width;
 // ==================================================
 
 @media ($min: $palm) { // min 640px
-
+  header {
+    height: 755px;
+  }
 }
 
 // ==================================================
@@ -74,11 +76,10 @@ $max: max-width;
     body {
       font-size: font-size(body) * 0.875;
     }
-
     .logo {
       font-size: font-size(logo) * 0.875;
     }
-    
+
     
   }
  
@@ -91,7 +92,7 @@ $max: max-width;
     body {
       font-size: font-size(body);
     }
-
+    
     .nav-wrapper {
       width: 90%;
     }
