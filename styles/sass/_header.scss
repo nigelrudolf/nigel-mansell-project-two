@@ -4,6 +4,7 @@ header {
     background-size: cover;
     background-position: right;
     height: 100vh;
+    position: relative;
 }
 
 .nav-wrapper {
@@ -61,4 +62,42 @@ header {
             font-weight: font-weight(bold);
         }
     }
+}
+
+.welcome {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    h1 {
+        display: flex;
+        flex-direction: column;
+        color: color(marigold);
+        font-size: font-size(mindnsoul) * 0.5;
+        span {
+            font-size: 4rem;
+            font-weight: font-weight(light);
+            color: color(ice-blue);
+            font-family: font-family(primary);
+            letter-spacing: 5px;
+        }
+    }
+}
+
+.welcome-wrapper {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    position: absolute;
+    bottom: -150px;
+    left: 20px;
+}
+
+.welcome-header {
+    
+}
+
+.welcome-image {
+    width: 100%;
+    max-width: 700px;
 }

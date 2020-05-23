@@ -54,31 +54,29 @@ $max: max-width;
 }
 
 // ==================================================
-// $Project Two Queries
-// ==================================================
-
-@media ($min: $palm) { // min 640px
-  header {
-    height: 755px;
-  }
-}
-
-// ==================================================
 // The Implementation!
 // ==================================================
 
 
-  @include mediaQuery($max, $palm) { // max 640px
-    
-  }
-
-  @include mediaQuery(null, $post-palm, $pre-tablet) {  // 641px - 767px
+  @include mediaQuery($min, $palm) { // min 640px
+    header {
+      height: 755px;
+    }
+    .welcome {
+      h1 {
+        font-size: font-size(mindnsoul) * 0.875;
+      }
+    }
     body {
       font-size: font-size(body) * 0.875;
     }
     .logo {
       font-size: font-size(logo) * 0.875;
     }
+  }
+
+  @include mediaQuery(null, $post-palm, $pre-tablet) {  // 641px - 767px
+    
 
     
   }
@@ -123,6 +121,22 @@ $max: max-width;
           }
         }
       }
+    }
+
+    .welcome-wrapper {
+      width: 100%;
+      margin: 0 auto;
+      left: 0;
+  }
+
+    .welcome {
+      h1 {
+        font-size: font-size(mindnsoul);
+      }
+    }
+
+    .welcome-image {
+      margin-right: 40px;
     }
 
   }
