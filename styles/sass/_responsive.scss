@@ -62,17 +62,27 @@ $max: max-width;
     header {
       height: 755px;
     }
+
     .welcome {
       h1 {
         font-size: font-size(mindnsoul) * 0.875;
       }
     }
+
     body {
       font-size: font-size(body) * 0.875;
     }
+    
     .logo {
       font-size: font-size(logo) * 0.875;
     }
+
+    .new-adventure-content {
+      h2 {
+        font-size: font-size(group) * 0.875;
+      }
+    }
+
   }
 
   @include mediaQuery(null, $post-palm, $pre-tablet) {  // 641px - 767px
@@ -132,6 +142,9 @@ $max: max-width;
     .welcome {
       h1 {
         font-size: font-size(mindnsoul);
+        span {
+            font-size: font-size(group);
+        }
       }
     }
 
@@ -139,11 +152,33 @@ $max: max-width;
       margin-right: 40px;
     }
 
+    .new-adventure-content {
+      h2 {
+        font-size: font-size(group);
+      }
+    }
+
   }
   
   @include mediaQuery($min, $desktop) { // min 1200px
-    .nav-wrapper {
+    .nav-wrapper, .new-adventure-wrapper {
       width: calc(100% - 250px);
+    }
+
+    .new-adventure {
+      padding-bottom: 120px;
+    }
+
+    .new-adventure-wrapper {
+      justify-content: space-between;
+    }
+
+    .new-adventure-content {
+      width: calc(75% - 80px);
+      margin-bottom: unset;
+      a {
+        padding: 10px;
+      }
     }
     
   }
