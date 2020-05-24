@@ -22,8 +22,39 @@ body {
     margin: 0 auto;
 }
 
-.new-adventure-content p, .info-one-wrapper div p {
+.body-text {
         color: color(ice-blue);
         line-height: 3.2rem;
         letter-spacing: 2px;
 }
+
+.link {
+        font-family: font-family(secondary);
+        color: color(ice-blue);
+        background: color(mud-green);
+        text-decoration: none;
+        padding: 10px;
+        display: inline-block;
+}
+.info-one-wrapper div {
+
+    h2 {
+        font-size: font-size(customized) * 0.65;
+        color: color(marigold); // dry
+        line-height: 5.8rem;
+        letter-spacing: 4.3px;
+    }
+}
+
+
+.info-two-row-one, .info-two-row-two{
+    div {
+        h2 {
+            color: color(marigold);
+            font-size: font-size(group) * 0.75;
+            line-height: 5.8rem;
+            letter-spacing: 4.9px;
+        }
+    }
+}
+        
