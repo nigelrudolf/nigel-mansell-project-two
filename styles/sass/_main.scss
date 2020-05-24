@@ -4,7 +4,7 @@
 .new-adventure {
     background: color(camo-green);
     padding-top: 230px;
-    padding-bottom: 60px
+    padding-bottom: 80px
 }
 
 .new-adventure-wrapper {
@@ -29,9 +29,9 @@
     }
     p {
         // mixin / dry
-        color: color(ice-blue);
-        line-height: 3.2rem;
-        letter-spacing: 2px;
+        // color: color(ice-blue);
+        // line-height: 3.2rem;
+        // letter-spacing: 2px;
         margin-bottom: 10px;
     }
     a {
@@ -68,7 +68,6 @@
 .gallery {
     background: color(charcoal);
     padding: 80px 0;
-    
 }
 
 .gallery-wrapper {
@@ -81,5 +80,72 @@
             margin-bottom: 20px;
     }
     }
-
 }
+
+
+// ==================================================
+// $Info One Section
+// ==================================================
+.info-one {
+    background: color(camo-green);
+    padding: 80px 0;
+}
+
+.info-one-wrapper {
+    @include mobile-wrapper
+}
+
+.info-one-wrapper div {
+    // height: 110px;
+    padding-bottom: 80px;
+    h2 {
+        display: flex;
+        align-items: center;
+        font-size: font-size(customized) * 0.65;
+        color: color(marigold); // dry
+    }
+    h2::before {
+        font-family: 'FontAwesome';
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: color(mud-green);
+        color: color(ice-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        // width: calc(100% - 40px);
+        // margin-left: 72px;
+    }
+    &:nth-child(4) {
+        padding-bottom: unset;
+    }
+}
+
+.info-one--customized-offers {
+    h2::before {
+        content : '\f015';
+    }
+}
+
+.info-one--community {
+    h2::before {
+        content : '\f0c0';
+    }
+}
+
+.info-one--blog {
+    h2::before {
+        content : '\f15b';
+    }
+}
+
+.info-one--get-in-touch {
+    h2::before {
+        content : '\f095';
+    }
+}
+
