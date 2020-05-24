@@ -8,8 +8,9 @@ header {
 }
 
 .nav-wrapper {
-    width: calc(100% - 40px);
-    margin: 0 auto;
+    // width: calc(100% - 40px);
+    // margin: 0 auto;
+    @include mobile-wrapper;
 }
 
 .logo-nav-container {
@@ -87,8 +88,9 @@ header {
 }
 
 .welcome-wrapper {
-    width: calc(100% - 40px);
-    margin: 0 auto;
+    // width: calc(100% - 40px);
+    // margin: 0 auto;
+    @include mobile-wrapper;
     position: absolute;
     bottom: -150px;
     left: 20px;

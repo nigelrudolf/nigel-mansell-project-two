@@ -12,3 +12,8 @@
     @include reset-list;
     display: flex;
 }
+
+@mixin mobile-wrapper {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
