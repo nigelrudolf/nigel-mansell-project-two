@@ -15,6 +15,19 @@ $colors: (
     @return $choice;
 }
 
+// Font Families
+$font-families: (
+    primary: ('Lato', sans-serif),
+    secondary: ('Dokdo', cursive)
+);
+@mixin font-family($type) {
+    font-family: map-get($font-families, $type);
+};
+@function font-family($type) {
+    $choice: map-get($font-families, $type);
+    @return $choice;
+}
+
 // Font Sizes
 $font-sizes: (
     html-default: 62.5%,
@@ -32,21 +45,6 @@ $font-sizes: (
 };
 @function font-size($type) {
     $choice: map-get($font-sizes, $type);
-    @return $choice;
-}
-
-
-
-// Font Family
-$font-families: (
-    primary: ('Lato', sans-serif),
-    secondary: ('Dokdo', cursive)
-);
-@mixin font-family($type) {
-    font-family: map-get($font-families, $type);
-};
-@function font-family($type) {
-    $choice: map-get($font-families, $type);
     @return $choice;
 }
 
