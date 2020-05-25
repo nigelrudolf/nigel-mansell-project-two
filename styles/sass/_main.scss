@@ -245,16 +245,30 @@
 
 
 // ==================================================
-// $Banner Image
+// $Banner Image Section
 // ==================================================
 .banner-image {   
     img {
         width: 100%;
+        display: block;
     }
 }
 
 
+// ==================================================
+// $Free Trials Section
+// ==================================================
+.free-trials {
+    padding: 40px 0;
+    background: color(camo-green);
+}
 
+.free-trials-wrapper {
+    @include mobile-wrapper;
+    text-align: center;
+}
 
-
-
+.free-trials-wrapper > p:nth-child(2) {
+    text-align: left;
+    margin-bottom: 20px;
+}

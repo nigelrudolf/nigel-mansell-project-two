@@ -228,7 +228,7 @@ $max: max-width;
   }
   
   @include mediaQuery($min, $desktop) { // min 1200px
-    .nav-wrapper, .new-adventure-wrapper, .gallery-wrapper, .info-one-wrapper {
+    .nav-wrapper, .new-adventure-wrapper, .gallery-wrapper, .info-one-wrapper{
       width: calc(100% - 250px);
     }
 
@@ -322,6 +322,11 @@ $max: max-width;
     .info-two--image-two {
       margin-top: unset;
     }
+
+    .free-trials-wrapper {
+      width: calc(100% - 400px);
+    }
+
 
     
 
