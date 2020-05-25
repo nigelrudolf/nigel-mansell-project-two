@@ -283,7 +283,7 @@ footer {
 
 
 // ==================================================
-// $blog.html Come and Discover Section
+// $blog.html - Come and Discover Section
 // ==================================================
 .flx-container {
     display: flex;
@@ -340,3 +340,76 @@ footer {
         font-weight: font-weight(bold);
     } 
 }
+
+// ==================================================
+// $blog.html - Comments Section
+// ==================================================
+.comments {
+    @include mobile-wrapper;
+    margin: 0 auto;
+    h2 {
+        color: color(ice-blue);
+        margin-bottom: 40px;
+    }
+}
+
+.commenter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    img {
+        min-width: 92px;
+        height: 89px;
+        margin-bottom: 10px;
+    }
+}
+
+.commenter-content {
+    max-width: 1006px;
+    h3 {
+        font-family: font-family(primary);
+        font-size: font-size(body);
+        color: color(marigold);
+        margin-bottom: 10px;
+    }     
+}
+
+.comments-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-input, .email-input {
+    flex-basis: 100%;
+    padding: 20px;
+    border-bottom: 2px solid color(marigold);
+}
+
+.email-input {
+    margin-bottom: 40px;
+}
+
+.comment-input, .post-comment-button {
+    flex-basis: 100%;
+}
+
+.comment-input {
+    padding: 30px 20px;
+    border: 1px solid color(marigold);
+    margin-bottom: 40px;
+}
+
+.post-comment-button {
+    background: color(mud-green);
+    padding: 10px;
+    font-family: font-family(secondary);
+}
+
+form {
+    input, textarea {
+        background: none;
+        border: none;
+        color: #fff;
+    }
+}
+

@@ -129,7 +129,9 @@ $max: max-width;
       .h-style-three {
         font-size: font-size(group) * 0.875;
       }
+      
   }
+
   
   // ==================================================
   // $blog.html
@@ -260,6 +262,14 @@ $max: max-width;
     font-size: font-size(group);
   }
 
+  .comments-form {
+    justify-content: space-between;
+  }
+  .name-input, .email-input {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 40px;  
+  }
+
   }
   
   @include mediaQuery($min, $desktop) { // min 1200px
@@ -369,6 +379,9 @@ $max: max-width;
     // ==================================================
     // $blog.html
     // ==================================================
+    .cad-flx-item {
+      width: 1006px;
+    }
     .come-and-discover {
       width: 1006px;
       border-right: 4px solid color(mud-green);
@@ -387,9 +400,20 @@ $max: max-width;
     }
 
     .cad-content-wrapper {
-      padding: 60px 80px 0 145px;
-      margin-top: 0;
+      padding-top: 60px;
+      width: calc(100% - 250px);
+      margin: 0 auto;
+    }
 
+    .comments {
+      width: calc(100% - 250px);
+    }
+
+    .commenter {
+      justify-content: space-between;
+    }
+    .commenter-content {
+      flex-basis: 620px;
     }
 
   }
