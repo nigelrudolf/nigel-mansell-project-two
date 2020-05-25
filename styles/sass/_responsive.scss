@@ -416,4 +416,18 @@ $max: max-width;
       flex-basis: 620px;
     }
 
+    .flx-container {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .side-info {
+      max-height: 1000px;
+      margin: unset;
+      margin-top: 120px;
+      margin-bottom: 80px;
+      flex-basis: 388px
+    }
+
   }

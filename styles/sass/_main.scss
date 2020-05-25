@@ -287,7 +287,7 @@ footer {
 // ==================================================
 .flx-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     background: color(camo-green);
 }
 
@@ -406,6 +406,7 @@ footer {
 }
 
 form {
+    margin-bottom: 80px;
     input, textarea {
         background: none;
         border: none;
@@ -413,3 +414,46 @@ form {
     }
 }
 
+// ==================================================
+// $blog.html - Side Info Aside
+// ==================================================
+.side-info-wrapper {
+    @include mobile-wrapper;
+}
+
+.side-info {
+    // position: relative;
+    // height: 433px;
+    max-width: 388px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    img {
+        // position: absolute;
+        // top: -20px;
+        margin-top: -20px;
+        width: calc(100% - 20px);
+        margin-bottom: 20px;
+        display: block;
+        margin-left: 20px;
+    }
+}
+
+.side-info-heading {
+    color: color(ice-blue);
+    margin-bottom: 10px;
+}
+
+.side-info-content {
+    margin-bottom: 40px;
+    font-weight: font-weight(light);
+}
+
+.bullet {
+    list-style: none;
+    margin-left: 25px;
+    li::before {
+    color: color(marigold);
+    content: '•';
+    margin-right: 10px;
+    }
+}
