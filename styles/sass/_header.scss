@@ -1,3 +1,6 @@
+// ==================================================
+// $index.html
+// ==================================================
 header {
     background-image: url(../../assets/home-image-1.jpg);
     background-repeat: no-repeat;
@@ -98,4 +101,12 @@ header {
 .welcome-image {
     width: 100%;
     max-width: 700px;
+}
+
+
+// ==================================================
+// $blog.html
+// ==================================================
+.header-blog {
+    background-image: url(../../assets/blog-image-1.jpg);
 }
