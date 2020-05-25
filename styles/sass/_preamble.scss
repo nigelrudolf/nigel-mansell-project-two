@@ -27,7 +27,10 @@ body {
 }
 
 .h-style-two { // (Blog, Get in touch)
-    
+    font-size: font-size(blog) * 0.75;
+    line-height: 6.96rem;
+    letter-spacing: 10.9px;
+    color: color(marigold);
 }
 .h-style-three { // (Group Programs, New..., Free..., Come Dis...,)
     color: color(marigold);

@@ -122,6 +122,10 @@ $max: max-width;
           }
       }
 
+      .h-style-two { // (Blog, Get in touch)
+        font-size: font-size(blog) * 0.875;
+      }
+
       .h-style-three {
         font-size: font-size(group) * 0.875;
       }
@@ -133,6 +137,19 @@ $max: max-width;
   .header-blog {
     height: 578px;
   }
+
+  .blog-wrapper {
+    width: calc(100% - 250px);
+  }
+  .post-image-container {  
+    width: 640px;
+    height: 419px;
+    img {
+        width: 640px;
+        height: 419px;
+    }
+  }
+      
 
   }
 
@@ -233,6 +250,10 @@ $max: max-width;
 
   .info-two--image-two {
     margin-bottom: -80px;
+  }
+
+  .h-style-two { // (Blog, Get in touch)
+    font-size: font-size(blog);
   }
 
   .h-style-three {
@@ -343,6 +364,32 @@ $max: max-width;
 
     .free-trials-wrapper {
       width: calc(100% - 400px);
+    }
+
+    // ==================================================
+    // $blog.html
+    // ==================================================
+    .come-and-discover {
+      width: 1006px;
+      border-right: 4px solid color(mud-green);
+      border-bottom: 4px solid color(mud-green);
+      margin-bottom: 40px;
+      padding-bottom: unset;
+    }
+
+      .post-image-container {  
+      width: 986px;
+      height: 646px;
+      img {
+          width: 986px;
+          height: 646px;
+      }
+    }
+
+    .cad-content-wrapper {
+      padding: 60px 80px 0 145px;
+      margin-top: 0;
+
     }
 
   }
