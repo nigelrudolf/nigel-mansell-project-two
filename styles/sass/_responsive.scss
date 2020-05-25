@@ -59,6 +59,8 @@ $max: max-width;
 
 
   @include mediaQuery($min, $palm) { // min 640px
+    
+
     header {
       height: 755px;
     }
@@ -118,6 +120,10 @@ $max: max-width;
           h2 {
               font-size: font-size(group) * 0.875;
           }
+      }
+
+      .h-style-three {
+        font-size: font-size(group) * 0.875;
       }
   }
   
@@ -225,6 +231,10 @@ $max: max-width;
     margin-bottom: -80px;
   }
 
+  .h-style-three {
+    font-size: font-size(group);
+  }
+
   }
   
   @include mediaQuery($min, $desktop) { // min 1200px
@@ -323,11 +333,12 @@ $max: max-width;
       margin-top: unset;
     }
 
+    .free-trials {
+      padding: 160px 0;
+    }
+
     .free-trials-wrapper {
       width: calc(100% - 400px);
     }
-
-
-    
 
   }
