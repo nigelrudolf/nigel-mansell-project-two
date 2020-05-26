@@ -292,6 +292,10 @@ footer {
     background: color(camo-green);
 }
 
+.cad-flx-item {
+    margin-top: -220px;
+  }
+
 .side-info {
     @include mobile-wrapper;
     margin-top: 40px;
@@ -304,33 +308,38 @@ footer {
 
   .blog-header {
     margin-bottom: 40px;
-    margin-top: -210px;
+    // margin-top: -210px;
     position: relative;
   }
 
-.post-image-container {
-    background: color(mud-green);
-    width: 280px;
-    height: 183px;
-    position: relative;
-    margin-left: 20px;
-    img {
-        width: 280px;
-        height: 183px;
-        position: absolute;
-        top: -20px;
-        left: -20px;
-    }
+// .post-image-container {
+//     background: color(mud-green);
+//     width: 280px;
+//     height: 183px;
+//     position: relative;
+//     margin-left: 20px;
+//     img {
+//         width: 280px;
+//         height: 183px;
+//         position: absolute;
+//         top: -20px;
+//         left: -20px;
+//     }
+// }
+
+.post-image {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    box-shadow: 20px 20px color(mud-green);
+    display: block;
 }
 
 .cad-content-wrapper {
     width: calc(100% - 40px);
-    margin-left: 20px;
-    margin-top: 60px;
+    margin: 60px auto 0 auto;
     max-width: 986px;
     h3, p {
-        margin-bottom: 40px;
-        
+        margin-bottom: 40px;   
     }
     h3 {
         font-family: font-family(primary);

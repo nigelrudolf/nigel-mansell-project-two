@@ -143,14 +143,6 @@ $max: max-width;
   .blog-wrapper {
     width: calc(100% - 250px);
   }
-  .post-image-container {  
-    width: 640px;
-    height: 419px;
-    img {
-        width: 640px;
-        height: 419px;
-    }
-  }
 
   .header-contact {
     height: 576px;
@@ -393,28 +385,25 @@ $max: max-width;
     // $blog.html
     // ==================================================
     .cad-flx-item {
-      width: 1006px;
+      width: 1026px;
     }
     .come-and-discover {
       width: 1006px;
-      border-right: 4px solid color(mud-green);
-      border-bottom: 4px solid color(mud-green);
       margin-bottom: 40px;
       padding-bottom: unset;
     }
 
-      .post-image-container {  
-      width: 986px;
-      height: 646px;
-      img {
-          width: 986px;
-          height: 646px;
-      }
+    .post-image {
+      box-shadow: 20px 20px color(mud-green);
+      width: 100%;
     }
 
     .cad-content-wrapper {
-      padding-top: 60px;
-      width: calc(100% - 250px);
+      width: 1025px;
+      border-right: 4px solid color(mud-green);
+      border-bottom: 4px solid color(mud-green);
+      padding: 60px 100px 60px 130px;
+      max-width: unset;
       margin: 0 auto;
     }
 
