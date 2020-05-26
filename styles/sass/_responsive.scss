@@ -359,14 +359,14 @@ $max: max-width;
   display: unset;
 }
 
-    .info-two--image-one, .info-two--image-two  {
-      width: 670px;
-      height: 400px;
-      img {
-        width: 670px;
-        height: 419px;
-      }
-    }
+.info-two--image-one, .info-two--image-two  {
+  width: 670px;
+  height: 400px;
+  img {
+    width: 670px;
+    height: 419px;
+  }
+}
 
     .info-two--image-two {
       margin-top: unset;
@@ -444,6 +444,14 @@ $max: max-width;
       margin-bottom: 120px;
     }
 
+    .social-icons {
+      width: 100%;
+      max-width: 165px;
+    }
+
+  }
+
+  @include mediaQuery($min, 1391px) { // min 1200px
     .social-address {
       margin-top: 400px;
     }
