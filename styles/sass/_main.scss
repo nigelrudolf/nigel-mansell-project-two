@@ -403,6 +403,20 @@ footer {
     background: color(mud-green);
     padding: 10px;
     font-family: font-family(secondary);
+
+    -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        -webkit-transition-duration: .25s;
+        transition-duration: .25s;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+
+}
+
+.post-comment-button:hover {
+    background: #788503;
 }
 
 form {

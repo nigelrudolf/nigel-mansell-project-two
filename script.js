@@ -2,7 +2,7 @@ const menuButton = document.querySelector('.menu-button');
 const tabletBreakpoint = 768; // pixels
 
 // https://stackoverflow.com/questions/18477016/switching-css-classes-based-on-screen-size
-// Makes hamburger and nav menu appear and dissapear based on screen width and breakpoint
+// Makes hamburger and nav menu appear and disappear based on screen width and breakpoint
 function responsive() { 
     $(window).on('resize', function() {
         if($(window).width() < tabletBreakpoint) {

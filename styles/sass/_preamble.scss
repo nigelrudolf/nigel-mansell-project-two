@@ -57,6 +57,14 @@ body {
         letter-spacing: 2px;
 }
 
+.form-placeholder {
+    font-family: font-family(primary);
+    font-weight: font-weight(light);
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 2px;
+}
+
 .link {
         font-family: font-family(secondary);
         color: color(ice-blue);
@@ -64,7 +72,21 @@ body {
         text-decoration: none;
         padding: 10px;
         display: inline-block;
+
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        -webkit-transition-duration: .25s;
+        transition-duration: .25s;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
 }
+
+.link:hover {
+    background: #788503;
+}
+
 .info-one-wrapper div {
 
     h2 {
