@@ -88,7 +88,6 @@ $max: max-width;
       justify-content: space-between;
       img {
         width: calc(33% - 10px);
-        // max-width: 400px;
           &:nth-child(1), &:nth-child(2) {
             margin-bottom: unset;
           }
@@ -159,8 +158,6 @@ $max: max-width;
  
   @include mediaQuery($min, $tablet) { // min 768px
     .wrapper {
-      // width: calc(100% - 40px);
-      // margin: 0 auto;
       @include mobile-wrapper;
       max-width: 1600px;
     }
@@ -319,7 +316,6 @@ $max: max-width;
     }
 
     .info-two-row-one {
-      // width: calc(100% - 125px);
       flex-direction: unset;
       justify-content: space-between;
       margin-bottom: 60px;
@@ -335,7 +331,6 @@ $max: max-width;
   }  
 
   .info-two-row-two {
-    // width: calc(100% - 125px);
     display: flex;
     flex-direction: row;
     align-items: unset;
@@ -347,7 +342,6 @@ $max: max-width;
             margin-left: 125px;
             display: flex;
             flex-direction: column;
-            // justify-content: center;
         }
     }
 }
@@ -438,7 +432,7 @@ $max: max-width;
     }
 
     .contact-form {
-      padding: 80px;
+      padding: 60px;
       margin-bottom: 120px;
     }
 
