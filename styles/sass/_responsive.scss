@@ -151,7 +151,11 @@ $max: max-width;
         height: 419px;
     }
   }
-      
+
+  .header-contact {
+    height: 576px;
+  }
+  
 
   }
 
@@ -428,6 +432,20 @@ $max: max-width;
       margin-top: 120px;
       margin-bottom: 80px;
       flex-basis: 388px
+    }
+
+    .get-in-touch-header {
+      width: calc(100% - 85px);
+      margin: 0 auto 40px auto;
+    }
+
+    .contact-form {
+      padding: 80px;
+      margin-bottom: 120px;
+    }
+
+    .social-address {
+      margin-top: 400px;
     }
 
   }

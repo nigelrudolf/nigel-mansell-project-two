@@ -407,7 +407,7 @@ footer {
 
 form {
     margin-bottom: 80px;
-    input, textarea {
+    input, textarea {  
         background: none;
         border: none;
         color: #fff;
@@ -456,4 +456,65 @@ form {
     content: '•';
     margin-right: 10px;
     }
+}
+
+// ==================================================
+// $contact.html - Get In Touch
+// ==================================================
+.get-in-touch {
+    background: color(camo-green);
+}
+
+.get-in-touch-wrapper {
+    @include mobile-wrapper;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -260px;
+    position: relative;
+    // padding-bottom: 40px;
+}
+
+.get-in-touch-header {
+    margin-bottom: 40px;
+}
+
+.contact-form-container {
+    background: color(marigold);
+    height: 510px;
+    margin-top: -20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: color(charcoal);
+    padding: 20px;
+    box-shadow: 20px 20px 0 color(marigold);
+}
+
+.social-address {
+    margin-bottom: 40px;
+    p {
+        line-height: 2.8rem;
+    }
+}
+
+.social-icons {
+    display: flex;
+    width: 50%;
+    max-width: 100px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    li { 
+        list-style: none;
+        a {
+            color: color(marigold);
+        }
+    }
+}
+
+.social-address-email {
+    margin-bottom: 20px;
 }
