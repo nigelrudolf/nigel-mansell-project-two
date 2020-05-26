@@ -390,7 +390,7 @@ footer {
     margin-bottom: 40px;
 }
 
-.comment-input, .post-comment-button {
+.comment-input, .form-button {
     flex-basis: 100%;
 }
 
@@ -400,7 +400,7 @@ footer {
     margin-bottom: 40px;
 }
 
-.post-comment-button {
+.form-button {
     background: color(mud-green);
     padding: 10px;
     font-family: font-family(secondary);
@@ -413,6 +413,8 @@ footer {
         transition-duration: .25s;
         -webkit-transition-delay: 0s;
         transition-delay: 0s;
+
+        font-size: 2.5rem;
 
 }
 
