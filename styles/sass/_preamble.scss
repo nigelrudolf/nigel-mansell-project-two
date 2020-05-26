@@ -57,7 +57,7 @@ body {
         letter-spacing: 2px;
 }
 
-.form-placeholder {
+input::placeholder, textarea::placeholder {
     font-family: font-family(primary);
     font-weight: font-weight(light);
     font-size: 2rem;
